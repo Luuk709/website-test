@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo" src="logo.png" alt="logo">
+        <div class="navlinks">
+            <a href="#firstnav">Contact</a>
+            <a href="#secondnav">Form</a>
+            <a href="index.html">Back to main page</a>
+        </div>
+    </nav>
+    <div  id="firstnav"></div>
+    <header>
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempora. Autem iste tenetur aspernatur
+            dolorem unde. Nihil nemo facilis magnam sed velit tempore vitae aliquid quaerat incidunt, provident eligendi
+            assumenda.</p>
+    </header>
+
+<main>
+    <section id="secondnav" class="first">
+
+        <h2>Form</h2>
+        <div class="contactform">
+            <form>
+                <div class="formstyling">
+                    <div>
+                        <label for="firstname">
+                            <p>First name:</p>
+                        </label>
+                        <input required="text" id="firstname" name="firstname">
+                    </div>
+                    <div>
+                        <label for="lastname">
+                            <p>Last name:</p>
+                        </label>
+                        <input required type="text" id="lastname" name="lastname">
+                    </div>
+                </div>
+                <label for="email">
+                    <p>Email:</p>
+                </label>
+                <input required type="email" id="email" name="email">
+                <div class="formstyling">
+                    <div>
+                        <label for="city">
+                            <p>Place of residence:</p>
+                        </label>
+                        <input required type="text" id="city" name="city">
+                    </div>
+                    <div id="date">
+                        <label for="birthdate">
+                            <p>Birthdate:</p>
+                        </label>
+                        <input required type="date" id="birthdate" name="birthdate">
+                    </div>
+                </div>
+                <label for="subject">
+                    <p>What is the subject of your message</p>
+                </label>
+                <select id="subject" name="subject">
+                    <option selected disabled>
+                        <p>Choose the subject</p>
+                    </option>
+                    <option value="complaint">
+                        <p>Complaint</p>
+                    </option>
+                    <option value="question">
+                        <p>Question</p>
+                    </option>
+                    <option value="tip">Tip</p>
+                    </option>
+                </select>
+                <br>
+                <label for="message">
+                    <p>Message</p>
+                </label>
+                <input type="text" id="message" name="message">
+                <p>Do you want to sign up for the newsletter:</p>
+                <div class="formstylingthree">
+                    <input required type="radio" id="newsletter" name="newsletter" value="yes">
+                    <label for="yes">
+                        <p>Yes</p>
+                    </label>
+                    <input required type="radio" id="newsletter" name="newsletter" value="no">
+                    <label for="no">
+                        <p>No</p>
+                    </label>
+                </div>
+                <div class="formstylingtwo">
+                    <input required type="checkbox" id="tos" name="tos">
+                    <label for="tos">
+                        <p>I agree with the terms of service</p>
+                    </label>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <img class="logo" src="logo.png" alt="logo">
+        <div id="footertext">
+            <p>Copyright 2024</p>
+            <div class="footerlinks">
+                <a href="links.html">Privacy Policy</a>
+                <a href="links.html">Terms & Conditions</a>
+                <a href="links.html">Cookie Policy</a>
+                <a href="links.html">Contact</a>
+            </div>
+        </div>
+        <div id="sociallinks">
+            <img class="socials" src="instagram.png" alt="instagram">
+            <img class="socials" src="facebook.webp" alt="facebook">
+            <img class="socials" src="snapchat.png" alt="snapchat">
+        </div>
+    </footer>
+</body>
+
+</html>

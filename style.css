@@ -1,0 +1,350 @@
+:root {
+    --font-primary: 'Helvetica', sans-serif;
+    --font-secondary: 'Inria Sans', sans-serif;
+    --font-tertiary: 'Roboto', sans-serif;
+    --font-fourth: 'font-family: "Ga Maamli", sans-serif';
+    --color-background: #000000;
+    --color-nav-bg: #8D3133;
+    --color-nav-link: #787878;
+    --color-text: #787878;
+    --color-footer-text: #000000;
+    --color-text-hover: #f4f3ee;
+    --color-input-bg: #f4f3ee;
+    --color-submit-bg: #464655;
+    --color-border: #2d5713;
+    --color-footer-bg: #787878;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    width: 100vw;
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Ga+Maamli&display=swap');
+@media (hover: hover) {
+
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--color-footer-text);
+    margin-bottom: 1vw;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-footer-text);
+    margin-bottom: 1vw;
+    margin-top: 0   ;
+}
+h3{
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+h4{
+    font-size: 1rem;
+    color: var(--color-text);
+}
+h5{
+    font-size: 0.9rem;
+    color: var(--color-footer-text);
+}
+nav {
+    background-color: var(--color-nav-bg);
+    padding: 10px 5%;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--color-text);
+}
+
+nav a,
+nav a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 5px;
+    color: var(--color-background);
+    transition: all 0.4s ease-in-out;
+}
+nav a:hover{
+    
+    color: var(--color-text-hover);
+
+}
+
+.navlinks {
+    margin: 10px;
+}
+
+.logo {
+    height: 3vw;
+    width: 9vw;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    padding: 10vw;
+    outline: 2px solid var(--color-text);
+    background-image: url(fabric-of-life.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    z-index: 1;
+}
+header h2{
+    font-family: var(--font-fourth);
+}
+.ep-info{
+    color: var(--color-footer-bg);
+    text-align: left;
+}
+
+.header-text{
+    width: 40%;
+    text-align: center;
+}
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+
+}
+header button{
+    background-color: var(--color-footer-bg);
+    height: 3vw;
+    width: 7vw;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+section {
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+.other-music{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    gap: 2.5vw;
+}
+
+.other-music h4{
+    color: var(--color-background);
+}
+.album-covers{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+}
+#suffocate:hover, #willow:hover, #arf-arf:hover{
+    transform: scale(1.04);
+
+}
+#suffocate, #willow, #arf-arf{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    outline: 1px solid var(--color-footer-bg);
+    flex: 1;
+    text-align: center;
+    padding: 1vw;
+    background-color: var(--color-nav-bg); 
+    transition: all 0.4s ease-in-out; 
+}
+.first p{
+    text-align:left;
+}
+.first button{
+    background-color: var(--color-footer-bg);
+    width: 8vw;
+    height: 3vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.stars{
+    margin-top: 1vw;
+}
+.checked {
+    color: orange;
+  }
+.first {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first h2{
+    color: var(--color-text);
+}
+.second {
+    padding-top: 3vw;
+    background-color: var(--color-nav-bg);
+}
+.second h2{
+    color: #000000;
+}
+
+.abc {
+    padding-left: 5%;
+}
+
+
+
+
+footer {
+    overflow: hidden;
+    background-color: var(--color-footer-bg);
+    padding: 3vw 5vw;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid black;
+}
+
+footer a,
+p {
+    font-size: small;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0.5vw;
+    color: var(--color-footer-text);
+    transition: all 0.4s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--color-text-hover);
+}
+
+footer p {
+    margin: 0;
+}
+
+#footertext {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin-bottom: 1vw;
+}
+
+.socials {
+    margin-top: 0.5vw;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 10%; 
+    background-color: var(--color-footer-bg);
+    transition: all 0.3s ease-in-out;
+}
+
+.socials:hover {
+    transform: scale(1.2);
+    
+}
+
+#sociallinks {
+    display: flex;
+    gap: 0.3vw;
+}
+
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 2%;
+    }
+    .logo{
+        height: 50%;
+        width: 30%;
+    }
+    .navlinks {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    h3 {
+        font-size: 1.2rem; 
+    }
+
+    h4 {
+        font-size: 1rem; 
+    }
+
+    .header-text {
+        width: 90%;
+    }
+    header button {
+        min-width: 80px; 
+        height: 10vw;
+        text-align: center;
+        padding: 0.3vw 0.2vw; 
+        font-size: 1rem; 
+    }
+    #suffocate, #willow, #arf-arf{
+        padding: 1vw;
+    }
+    .other-music {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .other-music button{
+        width: 20vw;
+        height: 10vw;
+    }
+    .album-covers {
+        width: 80vw;
+        height: auto;
+    }
+
+    footer {
+        padding: 2vw 2%; 
+        align-items: center;
+        gap: 1vw;
+    }
+    .footerlinks, #footertext{
+        gap: 1vw;
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+    }
+    footer a, p {
+        font-size: 0.8rem; 
+    }
+    .socials{
+        height: 10vw;
+        width: 30%;
+    }
+}

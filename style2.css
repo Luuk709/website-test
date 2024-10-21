@@ -1,0 +1,375 @@
+
+:root {
+    --font-primary: 'Helvetica', sans-serif;
+    --font-secondary: 'Inria Sans', sans-serif;
+    --font-tertiary: 'Roboto', sans-serif;
+
+    --color-background: #000000;
+    --color-header-bg: #000000;
+    --color-nav-bg: #8D3133;
+    --color-nav-link: #787878;
+    --color-text: #787878;
+    --color-footer-text: #000000;
+    --color-text-hover: #f4f3ee;
+    --color-input-bg: #f4f3ee;
+    --color-submit-bg: #464655;
+    --color-border: #2d5713;
+    --color-footer-bg: #787878;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+    font-family: var(--font-primary);
+    background-color: var(--color-nav-bg);
+}
+@media (hover: hover) {
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Ga+Maamli&display=swap');
+
+h1, h3, h4, p, a {
+    color: var(--color-text);
+}
+
+h1, h2 {
+    font-family: var(--font-secondary);
+    font-style: italic;
+}
+
+h3, h4, p{
+    font-family: var(--font-tertiary);
+}
+a{
+    color: var(--color-background);
+}
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0%;
+    color: var(--color-background);
+}
+
+nav {
+    background-color: var(--color-nav-bg);
+    padding: 10px 5%;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--color-text);
+    color: var(--color-background);
+}
+
+nav a, nav a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 0.5vw;
+}
+
+nav a:hover {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.2);
+}
+
+.logo {
+    height: 3vw;
+    width: 9vw;
+}
+
+header {
+    object-fit: cover;
+    padding: 3vw 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 2px solid black;
+    background-color: var(--color-header-bg);
+}
+
+
+
+header h1 {
+    margin-top: 0;
+}
+
+header p {
+    max-width: 50%;
+    font-size: 1rem;
+    color: var(--color-footer-bg);
+}
+
+
+section {
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.first {
+    padding: 5vw;
+    margin: auto;
+}
+
+.first h2 {
+    text-align: center;
+}
+
+@keyframes form-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.first {
+    animation: form-pulse 5s;
+}
+
+.contactform {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 0.5vw;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-input-bg);
+    transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+select:hover {
+    transform: scale(1.1);
+}
+
+select {
+    width: 100%;
+    padding: 0.5vw;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-input-bg);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit] {
+    background-color: var(--color-footer-bg);
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    padding: 0.5vw;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=radio]:hover, input[type=checkbox]:hover, input[type=select]:hover{
+    cursor: pointer;
+}
+form p {
+    margin: 0.3vw 0 0 0;
+    font-size: small;
+    color: var(--color-background);
+}
+
+.formstyling, .formstylingtwo, .formstylingthree {
+    display: flex;
+    gap: 1vw;
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 10vw;
+    transition: 0.4s ease-in-out;
+}
+
+#message:hover {
+    transform: scale(1.04);
+}
+
+input[type=date] {
+    width: 141%;
+}
+input:user-invalid {
+    background-color:var(--color-footer-bg);
+    border: 2px solid var(--color-nav-bg);
+} 
+
+footer {
+    border-image: round;
+    overflow: hidden;
+    background-color: var(--color-footer-bg);
+    outline: #5AA9E6;
+    padding: 3vw 5vw;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+footer a, p {
+    font-size: small;
+    color: var(--color-background);
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0.5vw;
+}
+
+footer a:hover {
+    transition: all 0.4s ease-in-out;
+    color: var(--color-text-hover);
+}
+
+footer p {
+    margin: 0;
+}
+
+#footertext {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin-bottom: 1vw;
+}
+
+.socials {
+    margin-top: 0.5vw;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 10%;
+    background-color: var(--color-nav-link);
+}
+
+.socials:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#sociallinks {
+    display: flex;
+    gap: 0.3vw;
+}
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 2%;
+    }
+    .logo{
+        height: 50%;
+        width: 30%;
+    }
+    .navlinks {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    h3 {
+        font-size: 1.2rem; 
+    }
+
+    h4 {
+        font-size: 1rem; 
+    }
+    p{
+        font-size: 0.5rem;
+    }
+    .header-text {
+        width: 90%;
+    }
+    .first{
+        margin: 0;
+        width: 100%;
+    }
+    .formstyling{
+        flex-direction: column;
+    }
+    .formstylingtwo{
+        gap: 1vw;
+        flex-direction: row;
+        align-items: center;    ;
+    }
+    .formstylingthree{
+        display: flex;
+        align-items: center;
+    }
+    .contactform{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    input, #email, input[type=date], select, #message{
+        width: 150%;
+        height: 10vw;
+        padding: 1vw;
+    }
+    input[type=checkbox]{
+        height: 5vw;
+        width: 5vw;
+    }
+    input[type=radio]{
+        height: 5vw;
+        width: 5vw;
+    }
+    input[type=submit]{
+        width: 150%;
+
+    }
+    footer {
+        padding: 2vw 2%; 
+        align-items: center;
+        gap: 1vw;
+    }
+    .footerlinks, #footertext{
+        gap: 1vw;
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+    }
+    footer a , p{
+        font-size: 0.8rem; 
+    }
+
+    .socials{
+        height: 10vw;
+        width: 30%;
+    }
+}
